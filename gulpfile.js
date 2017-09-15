@@ -34,7 +34,6 @@ gulp.task('sass', () =>  {
            .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
            .pipe(sourcemaps.write())
            .pipe(autoprefixer({
-              browsers: ['last 3 versions'],
               cascade: false
             }))
            .pipe(gulp.dest('./public/css/'))
