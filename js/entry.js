@@ -1,5 +1,4 @@
 window.addEventListener('load', function(){
-  console.log('hello');
   let navItems = document.querySelectorAll('.nav__list li');
   let demos = document.querySelectorAll('.content__text');
   let demoImgs = document.querySelectorAll('img');
@@ -26,7 +25,6 @@ window.addEventListener('load', function(){
   })
 
   function showDemo(demoIndex, item){
-    console.log(demoIndex);
     if(item){
       document.querySelector('.highlight').classList.remove('highlight');
       item.classList.add('highlight');
@@ -38,7 +36,6 @@ window.addEventListener('load', function(){
     demos[demoIndex].classList.add('showText');
     demoImgs[demoIndex].classList.add('showImg');
     headers[demoIndex].classList.add('showHeader');
-    console.log(demoIndex);
   }
 
 })
