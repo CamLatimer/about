@@ -75,6 +75,7 @@ a{
   padding:1rem;
   width: 85%;
   margin: auto;
+  transition: left .3s, opacity 1s;
 }
 
 .showText{
@@ -151,7 +152,6 @@ img.showImg{
   width: 100%;
   left:-150%;
   position: absolute;
-  transition: left .3s, opacity 1s;
 }
 .showText{
   opacity:1;
