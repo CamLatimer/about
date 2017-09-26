@@ -7,7 +7,6 @@ $siteYellow: #FFF799;
 $siteGreen: #82CA9C;
 $neonGreen: #ccff66;
 $siteBlue: #6DCFF6;
-$linkColor: darken(white, 38%);
 
 body{
   position: relative;
@@ -23,8 +22,12 @@ a{
     border-bottom:1px solid white;
   }
 }
-.bgAni{
-  color:$linkColor;
+.linkColor{
+  color:$siteSalmon;
+  transition: color .5s;
+  &:hover{
+    color:$siteGreen;
+  }
 }
 .demo__title{
   position: relative;
@@ -130,9 +133,15 @@ nav{
     transition: opacity 2s, bottom .8s;
   }
 }
+img.twitter_logo{
+  width: 25%;
+}
 img.showImg{
   opacity: 1;
   bottom:50px;
+}
+img.showImg.twitter_logo{
+  bottom:200px;
 }
 .content__details{
   position: relative;
@@ -166,6 +175,7 @@ nav{
     padding:0;
     li{
       cursor: pointer;
+      transition: color .5s;
       &:hover{
         color:$siteGreen;
       }
@@ -210,6 +220,7 @@ nav{
     color:$siteSalmon;
   }
 }
+
 @media screen and (max-height: 1000px){
   img.showImg{
     bottom:95px;
