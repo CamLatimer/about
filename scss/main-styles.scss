@@ -138,9 +138,6 @@ nav{
     transition: opacity 2s, bottom .8s;
   }
 }
-img.twitter_logo{
-  width: 25%;
-}
 img.showImg{
   opacity: 1;
   bottom:50px;
@@ -232,5 +229,8 @@ nav{
 @media screen and (max-height: 1000px){
   img.showImg{
     bottom:95px;
+  }
+  img.trivially{
+    bottom: auto;
   }
 }
