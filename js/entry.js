@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+document.addEventListener("DOMContentLoaded", function() {
 
   let navItems = document.querySelectorAll('.nav__list li');
   let demos = document.querySelectorAll('.content__text');

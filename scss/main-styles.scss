@@ -76,7 +76,7 @@ a{
   opacity:0;
   width: 85%;
   margin: auto;
-  transition: left .3s, opacity 1s;
+  transition: left .6s, opacity 1s;
   padding:0 1rem;
 }
 
@@ -136,7 +136,7 @@ nav{
     width: 100%;
     bottom:-100%;
     opacity: 0;
-    transition: opacity 2s, bottom .8s;
+    transition: bottom .8s;
   }
 }
 img.showImg{
@@ -157,7 +157,7 @@ img.showImg.twitter_logo{
   padding: 0;
   opacity: 0;
   width: 100%;
-  left:-150%;
+  left:-200%;
   position: absolute;
 }
 .showText{
@@ -228,9 +228,9 @@ nav{
 }
 
 @media screen and (max-height: 1000px){
-  img.showImg{
-    bottom:95px;
-  }
+  // img.showImg{
+  //   bottom:95px;
+  // }
   img.trivially{
     bottom: auto;
   }
