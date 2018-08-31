@@ -17,7 +17,7 @@ gulp.task('default', ['sass', 'jsDev', 'watch'], () => {
     // initialize browsersync
     browserSync.init({
         server: {
-          baseDir: '.'
+          baseDir: '.',
         },
         open: false,
         online: true,
@@ -44,6 +44,7 @@ gulp.task('sass', () =>  {
 
 gulp.task('watch', () => {
   gulp.watch(['./*.html' ], reload);
+
   gulp.watch(['./src/js/**/*.js'], ['jsDev']);
   gulp.watch([ './src/scss/**/*.scss'], ['sass'])
 console.log('gulp is up...');
