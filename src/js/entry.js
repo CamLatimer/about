@@ -2,9 +2,8 @@ const btns = document.querySelectorAll('.panelTrig');
 const contentPanels = document.querySelectorAll('.panel');
 let contactForm = document.getElementById('contactForm');
 
-
-btns.forEach(function(btn, index) {
-  btn.addEventListener('click', function(){
+for(let i = 0; i < btns.length; i++){
+  btns[i].addEventListener('click', function(){
     let panel = this.nextElementSibling;
     if(panel.style.maxHeight){
       panel.style.maxHeight = null;
@@ -18,7 +17,7 @@ btns.forEach(function(btn, index) {
       }
     }
   })
-})
+}
 
 contactForm.addEventListener('submit', function(event){
   const email = validateEmail(contactForm);
