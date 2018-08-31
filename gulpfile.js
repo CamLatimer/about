@@ -16,7 +16,9 @@ gulp.task('default', ['sass', 'jsDev', 'watch'], () => {
 
     // initialize browsersync
     browserSync.init({
-        server: true,
+        server: {
+          baseDir: '.'
+        },
         open: false,
         online: true,
     })
@@ -29,7 +31,7 @@ gulp.task('build', ['sass', 'jsBuild'], () => {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', () =>  {
-  gulp.src('./scss/main-styles.scss')
+  gulp.src('./src/scss/main-styles.scss')
            .pipe(sourcemaps.init())
            .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
            .pipe(sourcemaps.write())
@@ -42,8 +44,8 @@ gulp.task('sass', () =>  {
 
 gulp.task('watch', () => {
   gulp.watch(['./*.html' ], reload);
-  gulp.watch(['./js/**/*.js'], ['jsDev']);
-  gulp.watch([ './scss/**/*.scss'], ['sass'])
+  gulp.watch(['./src/js/**/*.js'], ['jsDev']);
+  gulp.watch([ './src/scss/**/*.scss'], ['sass'])
 console.log('gulp is up...');
 })
 
@@ -56,7 +58,7 @@ gulp.task('jsBuild', () => {
 })
 
 function jsBundle(flag){
-  browserify('./js/entry.js', {
+  browserify('./src/js/entry.js', {
     debug: true,
     transform: ['babelify',]
   })

@@ -4,62 +4,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cam Latimer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="public/css/main-styles.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Oxygen|Trirong:200" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/main-styles.css">
 </head>
 <body>
-<section class="demo__title">
-      <h1 class="demo__header headerA showHeader">HOLA, MUNDO!</h1>
-      <h1 class="demo__header headerB">Lu Na Ra</h1>
-      <h1 class="demo__header headerC">Trivially</h1>
-      <h1 class="demo__header headerD">Calendar</h1>
-      <!-- <h1 class="demo__header headerE">Contact</h1> -->
+  <div class="bodyWrapper">
+  <section>
+  <header class="siteHeader">
+    <h1>CAM LATIMER</h1>
+    <h3>Web Applications Developer</h3>
+  </header>
 </section>
-<section class="content">
-      <div class="content__img">
-            <img class="invisible" src="" alt="">
-            <img class="" src="public/assets/lu-na-ra.png" alt="">
-            <img class="" src="public/assets/trivially_shot.png" alt="">
-            <img class="" src="public/assets/showcal.png" alt="">
-            <!-- <img class="invisible" src="" alt=""> -->
-      </div>
-      <div class="content__details">
-        <div class="content__text text--0 showText">
-          <p class="content__blurb">Welcome to my place on the internet.  I’m a web developer who's a self-starter passionately pursuing his interests.  I'm focused on solid solutions, creativity, and teamwork.  Check out some demo projects, and feel free to contact me.</p>
-          <p><a class=" linkColor" href="https://github.com/camlatimer" target="_blank">Github</a></p>
-          <p class="content__blurb">camlatimer@gmail.com</p>
-        </div>
-        <!-- <h1 class="projects">DEMO PROJECTS</h1> -->
-        <div class="content__text text--1">
-          <h2><a class="linkColor" href="https://github.com/CamLatimer/Lu-Na-Ra" target="_blank">Github</a> | <a class="linkColor" href="https://lunaraart.flywheelsites.com/" target="_blank">View</a></h2>
-          <p class="content__blurb">A wordpress theme, templating for a photography (or any visual-focused) portfolio and blog.</p>
-        </div>
-        <div class="content__text text--2">
-          <h2><a class="linkColor" href="https://github.com/CamLatimer/Trivia" target="_blank">Github</a> | <a class="linkColor" href="https://still-ridge-33795.herokuapp.com/" target="_blank">View</a></h2>
-          <p class="content__blurb">A trivia game site that tracks users' accuracy.  Full stack javascript with an Express back end, React front end, MongoDB for users and storage.  Questions come from the Open Trivia Database API.</p>
-        </div>
-        <div class="content__text text--3">
-          <h2><a class="linkColor" href="https://github.com/CamLatimer/calendar" target="_blank">Github</a> | <a class="linkColor" href="https://camlatimer.github.io/calendar/" target="_blank">View</a></h2>
-          <p class="content__blurb">A simple grid-style calendar. Just Javascript's native date object and React.</h2>
-        </div>
-        <!-- <div class="content__text text--4">
-
-        </div> -->
-      </div>
+<section class="about">
+ <header class="panelTrig">
+   <button class="siteBtn">ABOUT</button>
+ </header>
+ <summary class="panel">
+  <p>
+    I'm a web developer, specializing in front end development. Languages and tools I typically work with include:
+  </p>
+  <p>Javascript, Node, Express, MongoDB, React, CSS, SASS</p>
+  <p>
+    A self-starter and life-long learner who passionately pursues his interests and embraces challenges, I’m focused on solid solutions, creativity, and teamwork.
+   </p>
+ </summary>
 </section>
-  <nav>
-    <ul class="nav__list">
-      <li class="nav__about highlight"><h2 class="nav__list--selected">About</h2></li>
-      <li class="nav__lunara"><h2>Lu Na Ra</h2></li>
-      <li class="nav__fourty"><h2>Trivially</h2></li>
-      <li class="nav__cal"><h2>Calendar</h2></li>
-      <!-- <li class="nav__cal"><h2>Contact</h2></li> -->
-    </ul>
-    <p class="back navToggles linkColor">PREV</p>
-    <p>|</p>
-    <p class="forward navToggles linkColor">NEXT</p>
-  </nav>
+<section class="projects">
+  <header class="panelTrig"><button class="siteBtn">PROJECTS</button></header>
+  <summary class="panel projectDemos">
+    <header class="panelTrig">News Checkr</header>
+    <summary class="panel">
+      <div class="projectImgWrapper">
+        <img class="projectImg" src="/assets/newschecker-small.png" alt="">
+      </div>
+     <p>
+      This is a news aggregator site I'm working on.</p>
+      <p>
+        Users can visit the site and see info from top news article headlines along with descriptions, images, and links to the articles' sources.
+      </p>
+      <p>
+      The primary tools for building it are Express, React, and News API.
+      </p>
+      <div class="projectBtnWrapper">
+        <a href="https://news-checkr.herokuapp.com/" target="_blank">
+        <button class="siteBtn projectBtn">
+          DEMO
+        </button>
+        </a>
+        <a href="https://github.com/CamLatimer/news-checkr" target="_blank">
+          <button class="siteBtn projectBtn">
+              GITHUB
+          </button>
+        </a>
+      </div>
+    </summary>
 
-<script src="public/js/bundle.js"></script>
+    <hr>
+        <header class="panelTrig">Trivia</header>
+        <summary class="panel">
+          <div class="projectImgWrapper">
+            <img class="projectImg trivia_shot" src="/assets/trivially_shot.png" alt="">
+          </div>
+         <p>
+          A trivia game site that tracks users' accuracy. Full stack javascript with an Express back end, React front end, MongoDB for users and storage. Questions come from the Open Trivia Database API.
+          </p>
+          <div class="projectBtnWrapper">
+            <a href="https://still-ridge-33795.herokuapp.com/" target="_blank">
+            <button class="siteBtn projectBtn">
+              DEMO
+            </button>
+            </a>
+            <a href="https://github.com/CamLatimer/Trivia" target="_blank">
+              <button class="siteBtn projectBtn">
+                  GITHUB
+              </button>
+            </a>
+          </div>
+        </summary>
+        <hr>
+        <header class="panelTrig">WordPress Theme</header>
+        <summary class="panel">
+          <div class="projectImgWrapper">
+            <img class="projectImg" src="/assets/lu-na-ra.png" alt="">
+          </div>
+         <p>
+          A wordpress theme, templating for a photography (or any visual-focused) portfolio and blog.
+          </p>
+          <div class="projectBtnWrapper">
+            <a href="https://github.com/CamLatimer/Lu-Na-Ra" target="_blank">
+              <button class="siteBtn projectBtn">
+                  GITHUB
+              </button>
+            </a>
+          </div>
+        </summary>
+        <hr>
+  </summary>
+</section>
+<section class="contact">
+ <header class="panelTrig">
+   <button class="siteBtn">CONTACT</button>
+ </header>
+ <summary class="panel">
+   <form id=contactForm action="https://formspree.io/camlatimer@gmail.com" method="post">
+     <legend>
+       Please get in touch:
+     </legend>
+     <fieldset>
+       <label for="fromEmail">
+         <input type="email" id="fromEmail" name="_replyto" placeholder="email" value=""></input>
+         <span class="error emailError">Please add a valid email address!</span>
+       </label>
+       <label for="message">
+         <textarea id="message" placeholder="add message here..."
+         name="message"></textarea>
+         <span class="error messageError">Please add a message!</span>
+       </label>
+       <input type="text" name="_gotcha" style="display:none" />
+     </fieldset>
+     <button class="siteBtn">SUBMIT</button>
+   </form>
+ </summary>
+</section>
+</div>
+<script src="/public/js/bundle.js"></script>
 </body>
 </html>
