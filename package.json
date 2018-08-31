@@ -1,5 +1,5 @@
 {
-  "name": "about-cam",
+  "name": "",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,24 +8,24 @@
       "env"
     ]
   },
+  "browserslist": [
+    "last 4 versions"
+  ],
   "devDependencies": {
-        "gulp-autoprefixer": "^4.0.0",
-        "babel": "^6.23.0",
-        "babel-cli": "^6.24.1",
-        "babel-core": "^6.24.1",
-        "babel-preset-env": "^1.4.0",
-        "babelify": "^7.3.0",
-        "browser-sync": "^2.18.8",
-        "browserify": "^14.3.0",
-        "gulp": "^3.9.1",
-        "gulp-if": "^2.0.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-sourcemaps": "^2.6.0",
-        "gulp-streamify": "^1.0.2",
-        "gulp-uglify": "^3.0.0",
-        "vinyl-source-stream": "^1.1.0"
-    },
-    "browserslist": [
-      "last 4 versions"
-    ]
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.24.6",
+    "browserify": "^16.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }
