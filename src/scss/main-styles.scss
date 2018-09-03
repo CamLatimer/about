@@ -63,16 +63,15 @@ button:focus{
   box-shadow: none;
 }
 .projectBtnWrapper{
-  display: flex;
-  justify-content: center;
+  padding: 0 2rem;
 }
 .projectBtnWrapper a{
-  margin: 0 .5rem 0 .5rem;
 }
 .projectBtn {
   padding: .5rem;
   padding-top:1rem;
   margin-bottom: 2rem;
+  box-shadow: none;
 }
 .projectDemos header{
   font-size: 1.5rem;
@@ -112,7 +111,7 @@ section{
 }
 .panel{
   max-height: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   transition: max-height 0.3s ease;
 }
